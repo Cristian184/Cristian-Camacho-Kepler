@@ -1,5 +1,5 @@
 body {
-    background-color: #333030; 
+    background-color: #000000; 
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -9,6 +9,7 @@ header {
     margin: 100px 0px;
     font-size: 60px;
     font-style: normal;
+    color: red;
 }
 
 h2 {
@@ -19,28 +20,16 @@ h2 {
     color: rgb(6, 141, 175);
 }
 
-#About {
-    border: 10px solid rgb(22, 12, 165) ;
-    margin: 50px 1350px 50px 50px;
+#About , #Experience, #Connect{
+    border: 10px solid rgb(255, 230, 0) ;
+    margin: 10px 40px;
     padding: 20px;
     
     
-}
-
-#Experience {
-
-    border: 10px solid rgb(22, 12, 165) ;
-    margin: -350px 800px 300px 600px;
-    padding: 10px;
-}
-
-#Connect {
-    border: 10px solid rgb(22, 12, 165) ;
-    margin: -561px 200px 20px 1200px;
-    padding: 10px;
 }
 
 #Connect a{
     color:rgb(6, 141, 175);
     font-weight: bolder;
 }
+
