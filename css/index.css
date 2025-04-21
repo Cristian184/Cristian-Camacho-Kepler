@@ -1,0 +1,35 @@
+body {
+    background-color: #000000; 
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: center;
+    margin: 100px 0px;
+    font-size: 60px;
+    font-style: normal;
+    color: red;
+}
+
+h2 {
+    background-color: black;
+    padding: 10px 0px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(6, 141, 175);
+}
+
+#About , #Experience, #Connect{
+    border: 10px solid rgb(255, 230, 0) ;
+    margin: 10px 40px;
+    padding: 20px;
+    
+    
+}
+
+#Connect a{
+    color:rgb(6, 141, 175);
+    font-weight: bolder;
+}
+
