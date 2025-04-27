@@ -9,10 +9,20 @@ header {
     margin: 100px 0px;
     font-size: 30px;
     font-style: normal;
-    color: rgb(124, 78, 26);
+    color: rgb(0, 0, 0);
 }
+
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+    
+}
+    
 nav a{
-    color: rgb(95, 38, 0);
+    color: rgb(187, 0, 0);
+    font-weight: bolder;
+    margin: 0 15px;
+
 }
 
 h2 {
@@ -27,12 +37,11 @@ h2 {
     border: 10px solid rgb(27, 35, 61) ;
     margin: 10px 40px;
     padding: 20px;
-    
-    
 }
 
 #Connect a{
     color: rgb(109, 60, 4);
+    font-size: 40px;
     font-weight: bolder;
 }
 
@@ -49,21 +58,25 @@ h2 {
 
 .job-header {
     display: flex;
+    justify-content: space-between;
     font-weight: bold;
 }
 
 .job-date {
     display: flex;
-    margin-left: 800px;
 }
 
-.Links {
+#Connect .Links {
     display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bolder;
 }
 
 
-.Links a {
+#Connect .Links a {
     padding: 10px 15px;
     border: 1px solid #ccc;
-    color: #333;
+    color: #bb0000;
+    
 }
