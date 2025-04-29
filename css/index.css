@@ -1,5 +1,5 @@
 body {
-    background-color: #000000; 
+    background-color: #3d5a91; 
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -7,29 +7,76 @@ body {
 header {
     text-align: center;
     margin: 100px 0px;
-    font-size: 60px;
+    font-size: 30px;
     font-style: normal;
-    color: red;
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+    
+}
+    
+nav a{
+    color: rgb(187, 0, 0);
+    font-weight: bolder;
+    margin: 0 15px;
+
 }
 
 h2 {
-    background-color: black;
+    background-color: rgb(0, 35, 189);
     padding: 10px 0px;
     font-size: 40px;
     font-weight: bolder;
-    color: rgb(6, 141, 175);
+    color: rgb(0, 15, 19);
 }
 
 #About , #Experience, #Connect{
-    border: 10px solid rgb(255, 230, 0) ;
+    border: 10px solid rgb(27, 35, 61) ;
     margin: 10px 40px;
     padding: 20px;
-    
-    
 }
 
 #Connect a{
-    color:rgb(6, 141, 175);
+    color: rgb(109, 60, 4);
+    font-size: 40px;
     font-weight: bolder;
 }
 
+
+#Experience ul {
+    padding: 0;
+}
+
+.job {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.job-date {
+    display: flex;
+}
+
+#Connect .Links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bolder;
+}
+
+
+#Connect .Links a {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    color: #bb0000;
+    
+}
