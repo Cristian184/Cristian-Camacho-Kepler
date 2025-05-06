@@ -7,8 +7,21 @@ body {
 header {
     text-align: center;
     margin: 100px 0px;
-    font-size: 30px;
+    font-size: 20px;
     font-style: normal;
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+nav a{
+    color: rgb(8, 34, 182);
     color: rgb(0, 0, 0);
 }
 
@@ -28,9 +41,10 @@ nav a{
 h2 {
     background-color: rgb(0, 35, 189);
     padding: 10px 0px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bolder;
-    color: rgb(0, 15, 19);
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 #About , #Experience, #Connect{
@@ -68,6 +82,7 @@ h2 {
 
 #Connect .Links {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 20px;
     font-weight: bolder;
@@ -78,5 +93,59 @@ h2 {
     padding: 10px 15px;
     border: 1px solid #ccc;
     color: #bb0000;
-    
 }
+
+/* Tablet Styles */
+@media (min-width: 600px) {
+    header {
+        font-size: 36px; 
+        color: #333333;  
+    }
+
+    h2 {
+        font-size: 45px; 
+        color: #ffffff;  
+    }
+
+    #Experience ul {
+        margin-left: 20px;         
+        background-color: #444488;
+    }
+
+    .job {
+        padding: 15px;                 
+        border-bottom: 2px solid #fff; 
+    }
+}
+
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    header {
+        font-size: 48px;    
+        color: #f0f0f0;     
+    }
+
+    h2 {
+        font-size: 50px;      
+        font-style: italic;    
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #About, #Experience, #Connect {
+        margin: 20px 100px;        
+        background-color: #1f2d45; 
+    }
+
+    #Connect .Links {
+        display: grid;     
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+}
+
