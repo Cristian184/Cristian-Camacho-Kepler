@@ -15,7 +15,9 @@ header {
 nav {
     background-color: #ffffff;
     padding: 10px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
     
 nav a{
@@ -31,6 +33,7 @@ h2 {
     font-size: 30px;
     font-weight: bolder;
     color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 #About , #Experience, #Connect{
@@ -68,7 +71,7 @@ h2 {
 
 #Connect .Links {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 20px;
     font-weight: bolder;
 }
@@ -117,6 +120,12 @@ h2 {
         font-style: italic;    
     }
 
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
     #About, #Experience, #Connect {
         margin: 20px 100px;        
         background-color: #1f2d45; 
@@ -124,7 +133,32 @@ h2 {
 
     #Connect .Links {
         display: grid;     
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
+#Skills {
+    border: 10px solid rgb(27, 35, 61);
+    margin: 10px 40px;
+    padding: 20px;
+    background-color: #1f2d45;
+}
+
+#Skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+#Skills li {
+    background-color: #ffffff;
+    color: #001f3f;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
