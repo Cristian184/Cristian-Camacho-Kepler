@@ -126,7 +126,7 @@ h2 {
         align-items: center;
     }
 
-    #About, #Experience, #Connect {
+    #About, #Experience, #Connect, #Links, #Projects {
         margin: 20px 100px;        
         background-color: #1f2d45; 
     }
@@ -162,3 +162,12 @@ h2 {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f2d45;
+    color: #ffffff;
+    margin-top: 50px;
+    border-top: 2px solid #ccc;
+    font-size: 16px;
+}
