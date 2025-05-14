@@ -22,6 +22,17 @@ nav {
     
 nav a{
     color: rgb(8, 34, 182);
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+    
+}
+    
+nav a{
+    color: rgb(187, 0, 0);
     font-weight: bolder;
     margin: 0 15px;
 
@@ -72,6 +83,7 @@ h2 {
 #Connect .Links {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
     font-weight: bolder;
 }
@@ -81,7 +93,6 @@ h2 {
     padding: 10px 15px;
     border: 1px solid #ccc;
     color: #bb0000;
-    
 }
 
 /* Tablet Styles */
@@ -126,7 +137,11 @@ h2 {
         align-items: center;
     }
 
+
     #About, #Experience, #Connect, #Links, #Projects {
+
+    #About, #Experience, #Connect {
+
         margin: 20px 100px;        
         background-color: #1f2d45; 
     }
@@ -171,3 +186,6 @@ footer {
     border-top: 2px solid #ccc;
     font-size: 16px;
 }
+}
+
+
