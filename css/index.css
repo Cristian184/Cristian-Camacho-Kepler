@@ -206,4 +206,14 @@ footer {
     background-color: #0056b3;
 }
 
+.message-button {
+    padding: 2px;
+}
 
+.message-button:hover {
+    background-color: #c9302c;
+}
+
+.hidden {
+    display: none;
+    }
