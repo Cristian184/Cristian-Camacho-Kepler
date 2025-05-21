@@ -26,7 +26,7 @@ const messageSection = document.getElementById("messages");
 const messageList = messageSection.querySelector("ul");
 
 // Hide messages section initially
-messageSection.style.display = "none";
+messageSection.classList.add("hidden");
 
 messageForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -52,6 +52,7 @@ messageForm.addEventListener("submit", function (event) {
   const removeButton = document.createElement("button");
   removeButton.innerText = "Remove";
   removeButton.type = "button";
+  removeButton.classList.add("message-button");
 
   removeButton.addEventListener("click", function () {
     newMessage.remove();
@@ -64,6 +65,7 @@ messageForm.addEventListener("submit", function (event) {
   const editButton = document.createElement("button");
   editButton.innerText = "Edit";
   editButton.type = "button";
+  editButton.classList.add("message-button");
 
   editButton.addEventListener("click", function () {
     const newText = prompt("Edit your message:", messageSpan.innerText.replace(" wrote: ", ""));
@@ -79,3 +81,36 @@ messageForm.addEventListener("submit", function (event) {
   messageSection.style.display = "block";
   messageForm.reset();
 });
+
+// Fetch GitHub repositories
+fetch("https://api.github.com/users/Cristian184/repos")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`GitHub API error: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then((repositories) => {
+    const projectSection = document.getElementById("Projects");
+    const projectList = projectSection.querySelector("ul");
+
+    repositories.forEach((repo) => {
+      const project = document.createElement("li");
+
+      const link = document.createElement("a");
+      link.href = repo.html_url;
+      link.innerText = repo.name;
+      link.target = "_blank";
+
+      project.appendChild(link);
+      projectList.appendChild(project);
+    });
+  })
+  .catch((error) => {
+    console.error("Failed to fetch GitHub repos:", error);
+    const projectSection = document.getElementById("Projects");
+    const projectList = projectSection.querySelector("ul");
+    const errorMessage = document.createElement("li");
+    errorMessage.innerText = "Unable to load projects at this time.";
+    projectList.appendChild(errorMessage);
+  });

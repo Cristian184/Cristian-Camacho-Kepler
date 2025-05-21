@@ -206,4 +206,55 @@ footer {
     background-color: #0056b3;
 }
 
+.message-button {
+    padding: 2px;
+}
+
+.message-button:hover {
+    background-color: #c9302c;
+}
+
+
+.hidden {
+    display: none;
+    }
+
+#Projects {
+    padding: 2rem;
+    border: 10px solid rgb(27, 35, 61);
+  }
+  
+  .project-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    margin: 1rem 0 0 0;
+  }
+  
+  .project-list li {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    flex: 1 1 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .project-list li:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-list a {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
+  }
+  
+  .project-list a:hover {
+    text-decoration: underline;
+  }
+  
 
