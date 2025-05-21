@@ -52,6 +52,7 @@ messageForm.addEventListener("submit", function (event) {
   const removeButton = document.createElement("button");
   removeButton.innerText = "Remove";
   removeButton.type = "button";
+  removeButton.classList.add("message-button");
 
   removeButton.addEventListener("click", function () {
     newMessage.remove();
@@ -64,6 +65,7 @@ messageForm.addEventListener("submit", function (event) {
   const editButton = document.createElement("button");
   editButton.innerText = "Edit";
   editButton.type = "button";
+  editButton.classList.add("message-button");
 
   editButton.addEventListener("click", function () {
     const newText = prompt("Edit your message:", messageSpan.innerText.replace(" wrote: ", ""));
