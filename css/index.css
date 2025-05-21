@@ -55,7 +55,7 @@ h2 {
 
 #Connect a{
     color: rgb(109, 60, 4);
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bolder;
 }
 
@@ -92,7 +92,12 @@ h2 {
 #Connect .Links a {
     padding: 10px 15px;
     border: 1px solid #ccc;
+    color: #367fd3;
+    text-align: center;
+    
+
     color: #bb0000;
+
 }
 
 /* Tablet Styles */
@@ -137,11 +142,7 @@ h2 {
         align-items: center;
     }
 
-
-    #About, #Experience, #Connect, #Links, #Projects {
-
-    #About, #Experience, #Connect {
-
+    #About, #Experience, #Connect, #Links, #Projects, #LeaveMessage, #messages{
         margin: 20px 100px;        
         background-color: #1f2d45; 
     }
@@ -154,7 +155,7 @@ h2 {
 
 #Skills {
     border: 10px solid rgb(27, 35, 61);
-    margin: 10px 40px;
+    margin: 10px 100px;
     padding: 20px;
     background-color: #1f2d45;
 }
@@ -186,6 +187,52 @@ footer {
     border-top: 2px solid #ccc;
     font-size: 16px;
 }
+
+
+#LeaveMessage, #messages {
+    border: 10px solid rgb(27, 35, 61);
+    padding: 20px;
+    background-color: #1f2d45;
 }
 
+#LeaveMessage form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#LeaveMessage input, #LeaveMessage textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#LeaveMessage button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#LeaveMessage button:hover {
+    background-color: #0056b3;
+}
+
+.message-button {
+    padding: 2px;
+}
+
+.message-button:hover {
+    background-color: #c9302c;
+}
+
+.hidden {
+    display: none;
+    }
+
+}
 
