@@ -22,6 +22,17 @@ nav {
     
 nav a{
     color: rgb(8, 34, 182);
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+    
+}
+    
+nav a{
+    color: rgb(187, 0, 0);
     font-weight: bolder;
     margin: 0 15px;
 
@@ -72,6 +83,7 @@ h2 {
 #Connect .Links {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
     font-weight: bolder;
 }
@@ -83,6 +95,9 @@ h2 {
     color: #367fd3;
     text-align: center;
     
+
+    color: #bb0000;
+
 }
 
 /* Tablet Styles */
@@ -173,6 +188,7 @@ footer {
     font-size: 16px;
 }
 
+
 #LeaveMessage, #messages {
     border: 10px solid rgb(27, 35, 61);
     padding: 20px;
@@ -217,3 +233,6 @@ footer {
 .hidden {
     display: none;
     }
+
+}
+
