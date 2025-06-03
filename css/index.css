@@ -1,9 +1,11 @@
+/* General Styling for the entire Website */
 body {
     background-color: #3d5a91; 
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* Header Styling */
 header {
     text-align: center;
     margin: 100px 0px;
@@ -12,6 +14,7 @@ header {
     color: rgb(255, 255, 255);
 }
 
+/* Navigation Styling */
 nav {
     background-color: #ffffff;
     padding: 10px;
@@ -26,7 +29,7 @@ nav a{
     margin: 0 15px;
 
 }
-
+/* Subheadings for h2 Styling */
 h2 {
     background-color: rgb(0, 35, 189);
     padding: 10px 0px;
@@ -35,20 +38,21 @@ h2 {
     color: rgb(255, 255, 255);
     text-align: center;
 }
-
-#About , #Experience, #Connect{
+/* Text box Styling within Subheadings  */
+#About , #Experience, #Connect, #Skills, #Projects, #LeaveMessage, #messages{
     border: 10px solid rgb(27, 35, 61) ;
     margin: 10px 40px;
     padding: 20px;
+    background-color: #1f2d45;
 }
 
+/* Connect Styling */
 #Connect a{
-    color: rgb(109, 60, 4);
     font-size: 20px;
     font-weight: bolder;
 }
 
-
+/* HTML Experience Subheadings Styling */
 #Experience ul {
     padding: 0;
 }
@@ -69,6 +73,7 @@ h2 {
     display: flex;
 }
 
+/* Connect Styling */
 #Connect .Links {
     display: flex;
     flex-direction: column;
@@ -85,6 +90,114 @@ h2 {
     
 }
 
+/* Skills Styling */
+#Skills {
+    margin: 10px 100px;
+}
+
+#Skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+#Skills li {
+    background-color: #ffffff;
+    color: #001f3f;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f2d45;
+    color: #ffffff;
+    margin-top: 50px;
+    border-top: 2px solid #ccc;
+    font-size: 16px;
+}
+
+/* Leave a Message Styling */
+#LeaveMessage form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#LeaveMessage input, #LeaveMessage textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#LeaveMessage button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#LeaveMessage button:hover {
+    background-color: #0056b3;
+}
+/* Message Button Styling */
+.message-button {
+    padding: 2px;
+}
+
+.message-button:hover {
+    background-color: #c9302c;
+}
+
+.hidden {
+    display: none;
+    }
+
+/* Project List Styling */
+  .project-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    text-align: center;
+  }
+  
+  .project-list li {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    flex: 1 1 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .project-list li:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-list a {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
+  }
+  
+  .project-list a:hover {
+    text-decoration: underline;
+  }
+  
 /* Tablet Styles */
 @media (min-width: 600px) {
     header {
@@ -138,123 +251,4 @@ h2 {
     }
 }
 
-#Skills {
-    border: 10px solid rgb(27, 35, 61);
-    margin: 10px 100px;
-    padding: 20px;
-    background-color: #1f2d45;
-}
-
-#Skills ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-}
-
-#Skills li {
-    background-color: #ffffff;
-    color: #001f3f;
-    padding: 10px 20px;
-    border-radius: 12px;
-    font-weight: bold;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1f2d45;
-    color: #ffffff;
-    margin-top: 50px;
-    border-top: 2px solid #ccc;
-    font-size: 16px;
-}
-
-#LeaveMessage, #messages {
-    border: 10px solid rgb(27, 35, 61);
-    padding: 20px;
-    background-color: #1f2d45;
-}
-
-#LeaveMessage form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-#LeaveMessage input, #LeaveMessage textarea {
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-#LeaveMessage button {
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#LeaveMessage button:hover {
-    background-color: #0056b3;
-}
-
-.message-button {
-    padding: 2px;
-}
-
-.message-button:hover {
-    background-color: #c9302c;
-}
-
-
-.hidden {
-    display: none;
-    }
-
-#Projects {
-    padding: 2rem;
-    border: 10px solid rgb(27, 35, 61);
-  }
-  
-  .project-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 0;
-    margin: 1rem 0 0 0;
-  }
-  
-  .project-list li {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    flex: 1 1 250px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-  }
-  
-  .project-list li:hover {
-    transform: translateY(-5px);
-  }
-  
-  .project-list a {
-    text-decoration: none;
-    color: #007acc;
-    font-weight: bold;
-  }
-  
-  .project-list a:hover {
-    text-decoration: underline;
-  }
-  
 
