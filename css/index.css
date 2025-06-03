@@ -25,6 +25,17 @@ nav {
     
 nav a{
     color: rgb(8, 34, 182);
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+    
+}
+    
+nav a{
+    color: rgb(187, 0, 0);
     font-weight: bolder;
     margin: 0 15px;
 
@@ -77,6 +88,7 @@ h2 {
 #Connect .Links {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
     font-weight: bolder;
 }
@@ -88,6 +100,9 @@ h2 {
     color: #367fd3;
     text-align: center;
     
+
+    color: #bb0000;
+
 }
 
 /* Skills Styling */
@@ -123,7 +138,16 @@ footer {
     font-size: 16px;
 }
 
+
 /* Leave a Message Styling */
+
+#LeaveMessage, #messages {
+    border: 10px solid rgb(27, 35, 61);
+    padding: 20px;
+    background-color: #1f2d45;
+}
+
+
 #LeaveMessage form {
     display: flex;
     flex-direction: column;
@@ -244,6 +268,21 @@ footer {
         margin: 20px 100px;        
         background-color: #1f2d45; 
     }
+
+.message-button {
+    padding: 2px;
+}
+
+.message-button:hover {
+    background-color: #c9302c;
+}
+
+.hidden {
+    display: none;
+    }
+
+}
+
 
     #Connect .Links {
         display: grid;     
