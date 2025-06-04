@@ -60,6 +60,7 @@ messageForm.addEventListener("submit", function (event) {
   removeButton.innerText = "Remove";
   removeButton.type = "button";
   removeButton.classList.add("message-button");
+
   // Add click event to remove the message
   removeButton.addEventListener("click", function () {
     newMessage.remove();
