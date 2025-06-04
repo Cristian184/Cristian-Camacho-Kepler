@@ -25,17 +25,6 @@ nav {
     
 nav a{
     color: rgb(8, 34, 182);
-    color: rgb(0, 0, 0);
-}
-
-nav {
-    background-color: #ffffff;
-    padding: 10px;
-    
-}
-    
-nav a{
-    color: rgb(187, 0, 0);
     font-weight: bolder;
     margin: 0 15px;
 
@@ -88,7 +77,6 @@ h2 {
 #Connect .Links {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 20px;
     font-weight: bolder;
 }
@@ -100,15 +88,9 @@ h2 {
     color: #367fd3;
     text-align: center;
     
-
-    color: #bb0000;
-
 }
 
 /* Skills Styling */
-#Skills {
-    margin: 10px 100px;
-}
 
 #Skills ul {
     display: flex;
@@ -138,16 +120,7 @@ footer {
     font-size: 16px;
 }
 
-
 /* Leave a Message Styling */
-
-#LeaveMessage, #messages {
-    border: 10px solid rgb(27, 35, 61);
-    padding: 20px;
-    background-color: #1f2d45;
-}
-
-
 #LeaveMessage form {
     display: flex;
     flex-direction: column;
@@ -176,7 +149,9 @@ footer {
 }
 /* Message Button Styling */
 .message-button {
-    padding: 2px;
+    padding: 2px 10px;
+    margin-left: 10px;
+    border-radius: 10px;
 }
 
 .message-button:hover {
@@ -186,6 +161,14 @@ footer {
 .hidden {
     display: none;
     }
+
+#messages a {
+    color: rgb(0, 178, 238);
+}
+
+#messages li {
+    margin-bottom: 15px;
+}
 
 /* Project List Styling */
   .project-list {
@@ -264,25 +247,10 @@ footer {
         align-items: center;
     }
 
-    #About, #Experience, #Connect, #Links, #Projects, #LeaveMessage, #messages{
+    #About, #Experience, #Connect, #Skills, #Links, #Projects, #LeaveMessage, #messages{
         margin: 20px 100px;        
         background-color: #1f2d45; 
     }
-
-.message-button {
-    padding: 2px;
-}
-
-.message-button:hover {
-    background-color: #c9302c;
-}
-
-.hidden {
-    display: none;
-    }
-
-}
-
 
     #Connect .Links {
         display: grid;     

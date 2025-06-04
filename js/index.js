@@ -75,7 +75,6 @@ messageForm.addEventListener("submit", function (event) {
   editButton.innerText = "Edit";
   editButton.type = "button";
   editButton.classList.add("message-button");
-
   // Add click event to prompt user to edit message
   editButton.addEventListener("click", function () {
     const newText = prompt("Edit your message:", messageSpan.innerText.replace(" wrote: ", ""));
